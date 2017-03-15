@@ -31,6 +31,7 @@ public class TicketsController {
         Method to retrieve all users
      */
     @RequestMapping(method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<List<TicketModel>> listAllUsers() {
 
         List<TicketModel> tickets = ticketService.getAllTicketsAsList();

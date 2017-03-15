@@ -15,7 +15,15 @@ public class TicketModel {
     private Date creationTime=new Date();
     private int estimates;
     private String creator;
+    private String title;
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     public String getTicketStatus() {
         return ticketStatus;
